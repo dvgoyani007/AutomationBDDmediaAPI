@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-02T13:58:35 IST" name="Default suite" finished-at="2023-07-02T13:58:42 IST" duration-ms="6597">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Test.TestRunner@20ccf40b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-07-02T13:58:35 IST" name="Default test" finished-at="2023-07-02T13:58:42 IST" duration-ms="6597">
+      <class name="Test.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Test.TestRunner@20ccf40b]" started-at="2023-07-02T13:58:35 IST" name="setUpClass" finished-at="2023-07-02T13:58:36 IST" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="initialSetUp()[pri:0, instance:Test.TestRunner@20ccf40b]" started-at="2023-07-02T13:58:36 IST" name="initialSetUp" finished-at="2023-07-02T13:58:36 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialSetUp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Test.TestRunner@20ccf40b]" started-at="2023-07-02T13:58:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-02T13:58:38 IST" duration-ms="2345" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify status code and response time"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[ottplatform/media API Test]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at MavenProject.Automation.BaseStepDefinition.userVerifiesTheResponseTimeShouldBeBelow(BaseStepDefinition.java:49)
+at ✽.User verifies the response time should be below 1000(file:///E:/GitHub/Automation/src/test/resources/features/mediaAPI.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Test.TestRunner@20ccf40b]" started-at="2023-07-02T13:58:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-02T13:58:39 IST" duration-ms="884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify id and segment_type in response"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[ottplatform/media API Test]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Test.TestRunner@20ccf40b]" started-at="2023-07-02T13:58:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-02T13:58:40 IST" duration-ms="903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify primary field  in response"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[ottplatform/media API Test]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Test.TestRunner@20ccf40b]" started-at="2023-07-02T13:58:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-02T13:58:41 IST" duration-ms="868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify only one track in the list has "now_playing" field in "offset" as true in response"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[ottplatform/media API Test]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Test.TestRunner@20ccf40b]" started-at="2023-07-02T13:58:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-02T13:58:42 IST" duration-ms="876" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify date header value in response"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[ottplatform/media API Test]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Test.TestRunner@20ccf40b]" started-at="2023-07-02T13:58:42 IST" name="tearDownClass" finished-at="2023-07-02T13:58:42 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Test.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
